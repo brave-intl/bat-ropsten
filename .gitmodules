@@ -1,0 +1,4 @@
+[submodule "basic-attention-token-crowdsale"]
+	path = basic-attention-token-crowdsale
+	url = https://github.com/brave-intl/basic-attention-token-crowdsale
+	branch = ropsten

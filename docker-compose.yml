@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  parity:
+    container_name: parity
+    image: parity/parity:stable
+    volumes:
+      - "/home/user/parity/testnet:/root/.parity"
+      - "/home/user/parity/testnetshare:/root/.local/share/io.parity.ethereum/"
+    ports:
+     - "8180:8180"
+     - "8545:8545"
+    command: ["--chain", "ropsten", "--rpcapi", "eth,net,web3,personal,parity"]
